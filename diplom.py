@@ -34,7 +34,7 @@ response = requests.get(
   }
 )
 json_data = response.json()
-print (json_data)
+
 for item in json_data["hours"]:
     print(f"Время: {item['time']}")
     print(f"Коэффициент заледенения: {item['iceCover']['noaa']}")
